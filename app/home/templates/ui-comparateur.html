@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Comparateur {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+        <div class="container-fluid">
+            <div class="card card-plain">
+              <div class="card-header card-header-primary">
+                <h4 class="card-title">Comparateur d'assurances professionnelles</h4>
+                <p class="card-category">
+                  <a target="_blank" href="https://lesfurets.hyperassur.com/pro/guide-assu-pro/"></a>
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card-body">
+                    <div class="iframe-container d-none d-lg-block">
+                      <iframe src="https://lesfurets.hyperassur.com/pro/guide-assu-pro/">
+                        <p>Votre browser ne supporte pas iframes.</p>
+                      </iframe>
+                    </div>
+                    <div class="col-md-12 d-none d-sm-block d-md-block d-lg-none d-block d-sm-none text-center ml-auto mr-auto">
+                      <h5>L'iframe ne fonctionne pas sur Mobile et Tablette.  Veuillez-vous connecter à ce
+                        <a href="https://lesfurets.hyperassur.com/pro/guide-assu-pro/" target="_blank">website</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

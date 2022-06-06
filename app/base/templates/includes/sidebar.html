@@ -1,0 +1,89 @@
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="/static/assets/img/sidebar-1.jpg">
+      <div class="logo">
+        <a target="_blank" rel="noopener noreferrer"
+           href="https://www.creative-tim.com/product/material-dashboard-flask" class="simple-text logo-normal">
+          Dashboard
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+
+        <ul class="nav">
+
+          {% if current_user.is_authenticated %}
+          <li class="nav-item {% if 'index' in segment %} active {% endif %}">
+            <a class="nav-link" href="/">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'page-user' in segment %} active {% endif %}">
+            <a class="nav-link" href="/page-user.html">
+              <i class="material-icons">person</i>
+              <p>Profil</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-clients' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-clients.html">
+              <i class="material-icons">groups</i>
+              <p>Clients</p>
+            </a>
+          </li>
+          <!--<li class="nav-item {% if 'ui-typography' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-typography.html">
+              <i class="material-icons">library_books</i>
+              <p>Typography</p>
+            </a>
+          </li>-->
+          <li class="nav-item {% if 'ui-calendar' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-calendar.html">
+              <i class="material-icons">today</i>
+              <p>Agenda</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-comparateur' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-comparateur.html">
+              <i class="material-icons">compare_arrows</i>
+              <p>Comparateur</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-pagesjaunes' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-pagesjaunes.html">
+              <i class="material-icons">work</i>
+              <p>PagesJaunes</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-naf5' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-naf5.html">
+              <i class="material-icons">category</i>
+              <p>NAF5</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-maps' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-maps.html">
+              <i class="material-icons">location_ons</i>
+              <p>Carte</p>
+            </a>
+          </li>
+          <!--<li class="nav-item {% if 'ui-notifications' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-notifications.html">
+              <i class="material-icons">notifications</i>
+              <p>Notifications</p>
+            </a>
+          </li>-->
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ url_for('base_blueprint.logout') }}" >
+              <i class="material-icons">directions_run</i>
+              <p>Déconnection</p>
+            </a>
+          </li>
+
+          {% else %}
+
+          {% endif %}
+
+        </ul>
+
+
+      </div>
+
+    </div>

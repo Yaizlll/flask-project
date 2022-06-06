@@ -1,0 +1,433 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Clients {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+        <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Connaissance Client</h4>
+                  <p class="card-category"> Profil de vos clients</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          ID
+                        </th>
+                        <th>
+                          Nom
+                        </th>
+                        <th>
+                          Prénom
+                        </th>
+                        <th>
+                          Age
+                        </th>
+                        <th>
+                          Pays
+                        </th>
+                        <th>
+                          Ville
+                        </th>
+                        <th>
+                          Profession
+                        </th>
+                        <th>
+                          Revenu
+                        </th>
+                      </thead>
+                      <tbody id="clients">
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            GARCIA
+                          </td>
+                          <td>
+                            Camille
+                          </td>
+                          <td>
+                            27
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Toulouse (31500)
+                          </td>
+                          <td>
+                            Chocolatier
+                          </td>
+                          <td class="text-primary">
+                            25,300€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>
+                            MARTIN
+                          </td>
+                          <td>
+                            Hugo
+                          </td>
+                          <td>
+                            23
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Metz (57463)
+                          </td>
+                          <td>
+                            Menuisier
+                          </td>
+                          <td class="text-primary">
+                            27,200€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            3
+                          </td>
+                          <td>
+                            SABATIER
+                          </td>
+                          <td>
+                            Patrick
+                          </td>
+                          <td>
+                            46
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Lilles (59350)
+                          </td>
+                          <td>
+                            Fabricant de meubles
+                          </td>
+                          <td class="text-primary">
+                            20,700€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            4
+                          </td>
+                          <td>
+                            SLIMANI
+                          </td>
+                          <td>
+                            Inès
+                          </td>
+                          <td>
+                            30
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Brest (29010)
+                          </td>
+                          <td>
+                            Constructeur de maisons
+                          </td>
+                          <td class="text-primary">
+                            27,900€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            5
+                          </td>
+                          <td>
+                            LIMA
+                          </td>
+                          <td>
+                            Ana
+                          </td>
+                          <td>
+                            25
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Marseille (13055)
+                          </td>
+                          <td>
+                            Plombier
+                          </td>
+                          <td class="text-primary">
+                            28,100€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            DUBOIS
+                          </td>
+                          <td>
+                            Gauthier
+                          </td>
+                          <td>
+                            35
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Limoges (87085)
+                          </td>
+                          <td>
+                            Travail du bois
+                          </td>
+                          <td class="text-primary">
+                            26,900€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            7
+                          </td>
+                          <td>
+                            LEE
+                          </td>
+                          <td>
+                            Julie
+                          </td>
+                          <td>
+                            32
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Torcy (77200)
+                          </td>
+                          <td>
+                            Bijoutier
+                          </td>
+                          <td class="text-primary">
+                            32,900€
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            8
+                          </td>
+                          <td>
+                            STRAUSS
+                          </td>
+                          <td>
+                            Marc
+                          </td>
+                          <td>
+                            42
+                          </td>
+                          <td>
+                            FRANCE
+                          </td>
+                          <td>
+                            Amiens (80021)
+                          </td>
+                          <td>
+                            Charcutier
+                          </td>
+                          <td class="text-primary">
+                            30,600€
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header card-header-primary">
+                <h4 class="card-title">Ajouter un Client</h4>
+                <p class="card-category">Compléter son profil</p>
+              </div>
+              <div class="card-body">
+                <form id="formClient">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">ID Client</label>
+                        <input type="text" name="id_client" class="form-control" id="idform" disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Prénom</label>
+                        <input type="text" name="prenom" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Nom</label>
+                        <input type="text" name="nom" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Adresse email</label>
+                        <input type="email" name="email" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Adresse</label>
+                        <input type="text" name="adresse" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Ville</label>
+                        <input type="text" name="ville" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Pays</label>
+                        <input type="text" name="pays" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Code Postal</label>
+                        <input type="text" name="codepostal" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Age</label>
+                        <input type="number" name="age" class="form-control" max="120">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Profession</label>
+                        <input type="text" name="profession" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Revenu</label>
+                        <input type="text" name="revenu" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>À propos</label>
+                        <div class="form-group">
+                          <label class="bmd-label-floating"> </label>
+                          <textarea class="form-control" name="a_propos" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary pull-right">Ajouter</button>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script>
+  var id =9;
+  console.log(id)
+  var clients = document.getElementById("clients");
+  var tr_client =null;
+  var td_client =null;
+  var json_client = null;
+  while(localStorage.getItem(id)!=null) {
+    json_client= JSON.parse(localStorage.getItem(id));
+    console.log(json_client)
+    tr_client = document.createElement("tr");
+    td_client = document.createElement("td");
+    td_client.append(id);
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.append(json_client.nom.toUpperCase());
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.append(json_client.prenom);
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.append(json_client.age);
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.append(json_client.pays.toUpperCase());
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.append(json_client.ville +` (${json_client.codepostal})`);
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.append(json_client.profession);
+    tr_client.appendChild(td_client);
+    td_client = document.createElement("td");
+    td_client.setAttribute("class","text-primary")
+    td_client.append(json_client.revenu+"€");
+    tr_client.appendChild(td_client);
+    clients.appendChild(tr_client);
+    id=id+1;
+  }
+  document.getElementById("idform").setAttribute("value",id);
+
+  let form = document.getElementById("formClient");
+  form.addEventListener('submit', (event) => {
+    console.log("ALLO")
+    let client = {
+      prenom:form.elements['prenom'].value,
+      nom:form.elements['nom'].value,
+      email:form.elements['email'].value,
+      adresse:form.elements['adresse'].value,
+      ville:form.elements['ville'].value,
+      pays:form.elements['pays'].value,
+      codepostal:form.elements['codepostal'].value,
+      age:form.elements['age'].value,
+      profession:form.elements['profession'].value,
+      revenu:form.elements['revenu'].value
+    }
+    console.log(client)
+    client = JSON.stringify(client);
+    localStorage.setItem(form.elements['id_client'].value,client);
+  });
+</script>
+{% endblock javascripts %}
